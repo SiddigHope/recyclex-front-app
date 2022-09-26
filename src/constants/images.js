@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
-import email from '../assets/email.png';
+import email from '../assets/email1.png';
+import emailOnboarding from '../assets/onboarding_email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
@@ -36,6 +37,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import recyclex from '../assets/recyclex_new.png';
+import recyclex2 from '../assets/2.png';
 import vecrecycle from '../assets/vecrecycle.jpg';
 import walking from '../assets/walking.png';
 import enviroment from '../assets/enviroment.png';
@@ -51,6 +53,7 @@ import values from '../assets/values.png';
 
 export default {
   email,
+  emailOnboarding,
   mobile,
   api,
   cpp,
@@ -84,6 +87,7 @@ export default {
   skype,
   spotify,
   recyclex,
+  recyclex2,
   vecrecycle,
   walking,
   enviroment,
