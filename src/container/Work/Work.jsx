@@ -39,7 +39,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">What <span>RecycleX</span> do?</h2>
+      <h2 className="head-text">What <span>Recyclyx</span> do?</h2>
 
       {/* <div className="app__work-filter">
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -113,6 +113,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  'work',
+  'services',
   'app__primarybg',
 );

@@ -1,3 +1,23 @@
+.app_container_custom {
+  flex: 1;
+  display: flex;
+  // background-color: aqua;
+  flex-direction: row;
+
+  .img_container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
 .app__footer {
   flex: 1;
   width: 100%;
@@ -9,25 +29,27 @@
 }
 
 .app__footer-cards {
-  width: 60%;
   display: flex;
+  flex: 1;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  // margin: 4em 2rem 2rem;
 
   .app__footer-card {
     min-width: 290px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
+    justify-content: center;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color: #fff !important;
+    box-shadow: 0 0 5px rgba(53, 135, 130, 0.3);
 
     transition: all 0.3s ease-in-out;
 
@@ -45,7 +67,7 @@
       font-weight: 500;
     }
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 5px var(--secondary-color) !important;
     }
 
     @media screen and (max-width: 450px) {
@@ -67,7 +89,7 @@
 }
 
 .app__footer-form {
-  width: 60%;
+  width: 90%;
   flex-direction: column;
   margin: 1rem 2rem;
 

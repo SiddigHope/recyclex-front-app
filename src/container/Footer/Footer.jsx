@@ -39,42 +39,50 @@ const Footer = () => {
     <>
       {/* <h2 className="head-text">Connect with <span>RecycleX</span> team</h2> */}
 
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:recyclyx@gmail.com" className="p-text">recyclyx@gmail.com</a>
+      <div className='app_container_custom'>
+
+        <div className='img_container'>
+          <img src={images.emailOnboarding} alt="email onboarding" />
         </div>
-        <div className="app__footer-card">
+        <div className='app__footer'>
+          <div className="app__footer-cards">
+            <div className="app__footer-card ">
+              <img src={images.email} alt="email" />
+              <a href="mailto:contact@recyclyx.com" className="p-text">contact@recyclyx.com</a>
+            </div>
+            {/* <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href="tel:+249918088851" className="p-text">+(249) 918 088 851</a>
+        </div> */}
+          </div>
+          {!isFormSubmitted ? (
+            <div className="app__footer-form app__flex">
+              <div className="app__flex">
+                <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+              </div>
+              <div className="app__flex">
+                <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+              </div>
+              <div>
+                <textarea
+                  className="p-text"
+                  placeholder="Your Message"
+                  value={message}
+                  name="message"
+                  onChange={handleChangeInput}
+                />
+              </div>
+              <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+            </div>
+          ) : (
+            <div>
+              <h3 className="head-text">
+                Thank you for getting in touch!
+              </h3>
+            </div>
+          )}
         </div>
       </div>
-      {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
-          </div>
-          <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
-          </div>
-          <div>
-            <textarea
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </div>
-      ) : (
-        <div>
-          <h3 className="head-text">
-            Thank you for getting in touch!
-          </h3>
-        </div>
-      )}
     </>
   );
 };
