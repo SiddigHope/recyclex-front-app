@@ -37,7 +37,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import recyclex from '../assets/recyclex_new.png';
-import recyclex2 from '../assets/2.png';
+import recyclex2 from '../assets/2_white.png';
 import vecrecycle from '../assets/vecrecycle.jpg';
 import walking from '../assets/walking.png';
 import enviroment from '../assets/enviroment.png';
